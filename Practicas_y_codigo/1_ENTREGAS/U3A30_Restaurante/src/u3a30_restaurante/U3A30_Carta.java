@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class U3A30_Carta {
-
-    public static String elegirComida() {
-
-        List<String> platos = new ArrayList<>() {
+    
+    private static List<String> platos = new ArrayList<>() {
             {
                 add("Lentejas");
                 add("Ensalada mixta");
@@ -17,6 +15,9 @@ public class U3A30_Carta {
                 add("Arroz con marisco");
             }
         };
+
+    public static String elegirComida() {
+
 
         double aleatorio = Math.random();
         

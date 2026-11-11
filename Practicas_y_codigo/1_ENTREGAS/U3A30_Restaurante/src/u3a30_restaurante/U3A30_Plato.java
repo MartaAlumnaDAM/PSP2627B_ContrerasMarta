@@ -2,16 +2,17 @@ package u3a30_restaurante;
 
 public class U3A30_Plato {
     
-    U3A30_Carta platoElegido = new U3A30_Carta();
+    //private static U3A30_Carta platoElegido = new U3A30_Carta();
+    private String nombre;
     
-    public static U3A30_Plato prepara(U3A30_Carta platoElegido){
+    public void prepara(){
         
-        U3A30_Plato plato = new U3A30_Plato();
+        this.nombre = U3A30_Carta.elegirComida();
         
-        return plato;
     }
     
-    public static void sirve(U3A30_Plato plato){
+    public void sirve(U3A30_Plato plato){
         
+        this.nombre = "";
     }
 }
